@@ -98,3 +98,53 @@
 
 // let student1 = Student("Student1", 10);
 // let student2 = Student("Student2", 20);
+
+// 5. Prototype Inheritance
+// function Student(name, energy) {
+//   //   let this = Object.create(Student.prototype);
+//   this.name = name;
+//   this.energy = energy;
+//   //   return this;
+// }
+
+// Student.prototype.eat = function (portion) {
+//   this.energy += portion;
+//   console.log(`${this.name}->Eat`);
+// };
+
+// Student.prototype.play = function (time) {
+//   this.energy -= time;
+//   console.log(`${this.name}->Play`);
+// };
+
+// Student.prototype.sleep = function (time) {
+//   this.energy += time * 2;
+//   console.log(`${this.name}->Sleep`);
+// };
+
+// let student1 = new Student("Student1", 10);
+
+// 6. Class (This run prototype in the back)
+// class Student {
+//   constructor(name, energy) {
+//     this.name = name;
+//     this.energy = energy;
+//   }
+
+//   eat(portion) {
+//     this.energy += portion;
+//     console.log(`${this.name}->Eat`);
+//   }
+
+//   play(time) {
+//     this.energy -= time;
+//     console.log(`${this.name}->Play`);
+//   }
+
+//   sleep(time) {
+//     this.energy += time * 2;
+//     console.log(`${this.name}->Sleep`);
+//   }
+// }
+
+// let student1 = new Student("Student1", 10);
