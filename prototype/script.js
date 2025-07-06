@@ -1,5 +1,6 @@
 // Creating Object in JavaScript
 // (Property -> value, Method -> function)
+
 // 1. Object Literal
 // let student1 = {
 //   name: "Student1",
