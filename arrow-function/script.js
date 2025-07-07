@@ -105,3 +105,18 @@
 // const user1 = new User();
 
 // ================================================
+
+// const box = document.querySelector(".box");
+// box.addEventListener("click", function () {
+//   let condition1 = "size";
+//   let condition2 = "caption";
+
+//   if (this.classList.contains(condition1)) {
+//     [condition1, condition2] = [condition2, condition1];
+//   }
+
+//   this.classList.toggle(condition1);
+//   setTimeout(() => {
+//     this.classList.toggle(condition2);
+//   }, 600);
+// });
