@@ -61,10 +61,15 @@ function updateUIDetail(resp) {
   modalBody.innerHTML = movieDetail;
 }
 
+function placeholder(img) {
+  img.onerror = null;
+  img.src = "placeholder.png";
+}
+
 function showCards(el) {
   return `<div class="col-md-4 my-5">
             <div class="card">
-                <img src="${el.Poster}" class="card-img-top" />
+                <img src="${el.Poster}" onerror="placeholder(this)" class="card-img-top" />
                 <div class="card-body">
                     <h5 class="card-title">${el.Title}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${el.Year}</h6>
@@ -79,7 +84,7 @@ function showMovieDetail(res) {
   return `<div class="container-fluid">
               <div class="row">
                 <div class="col-md-3">
-                  <img src="${res.Poster}" class="img-fluid" alt="" />
+                  <img src="${res.Poster}" onerror="placeholder(this)" class="img-fluid" alt="" />
                 </div>
                 <div class="col-md">
                   <ul class="list-group">
